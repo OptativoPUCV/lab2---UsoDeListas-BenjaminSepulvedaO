@@ -45,9 +45,9 @@ List* crea_lista() {
    List* L = create_list();
    for(int i = 1; i < 11; i++)
    {
-     int* dato = (int*)malloc(sizeof(int));
-     *dato = i;
-     pushBack(L, dato);
+     int* elemento = (int*)malloc(sizeof(int));
+     *elemento = i;
+     pushBack(L, elemento);
    }
    return L;
 }
@@ -120,6 +120,7 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
+  
    return 0;
 }
 
