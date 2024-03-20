@@ -1,0 +1,19 @@
+Wed 20 Mar 2024 09:46:05 PM UTC: 
+ exercises.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:48:24: error: implicit declaration of function ‘mallloc’; did you mean ‘malloc’? [-Werror=implicit-function-declaration]
+   48 |      int* dato = (int*)mallloc(sizeof(int));
+      |                        ^~~~~~~
+      |                        malloc
+exercises.c:48:18: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+   48 |      int* dato = (int*)mallloc(sizeof(int));
+      |                  ^
+exercises.c:50:6: error: implicit declaration of function ‘push_back’; did you mean ‘pushBack’? [-Werror=implicit-function-declaration]
+   50 |      push_back(L, dato);
+      |      ^~~~~~~~~
+      |      pushBack
+cc1: all warnings being treated as errors
+Compilation failed
+990e09a
