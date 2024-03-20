@@ -154,6 +154,7 @@ int parentesisBalanceados(char *cadena) {
       else
         return 0;
     }
+    i++;
   }
   return 1;
 }
