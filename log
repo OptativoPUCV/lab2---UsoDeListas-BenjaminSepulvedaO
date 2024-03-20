@@ -99,3 +99,40 @@ Wed 20 Mar 2024 11:14:47 PM UTC:
  tests:  4|1
 total_score: 50/70
 688e1c4
+Wed 20 Mar 2024 11:26:47 PM UTC: 
+ exercises.c | 31 ++++++++++++++++++++++++++++++-
+ 1 file changed, 30 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:132:19: error: comparison between pointer and integer [-Werror]
+  132 |     if (cadena[i] == "(" || cadena[i] == "[" || cadena[i] == "{")
+      |                   ^~
+exercises.c:132:19: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:132:39: error: comparison between pointer and integer [-Werror]
+  132 |     if (cadena[i] == "(" || cadena[i] == "[" || cadena[i] == "{")
+      |                                       ^~
+exercises.c:132:39: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:132:59: error: comparison between pointer and integer [-Werror]
+  132 |     if (cadena[i] == "(" || cadena[i] == "[" || cadena[i] == "{")
+      |                                                           ^~
+exercises.c:132:59: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:136:24: error: comparison between pointer and integer [-Werror]
+  136 |     else if (cadena[i] == ")")
+      |                        ^~
+exercises.c:136:24: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:138:21: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  138 |       if (top(pila) == "(")
+      |                     ^~
+exercises.c:143:24: error: comparison between pointer and integer [-Werror]
+  143 |     else if (cadena[i] == "]")
+      |                        ^~
+exercises.c:143:24: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:145:21: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  145 |       if (top(pila) == "[")
+      |                     ^~
+exercises.c:152:21: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  152 |       if (top(pila) == "{")
+      |                     ^~
+cc1: all warnings being treated as errors
+Compilation failed
+651dca1
