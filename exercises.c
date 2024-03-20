@@ -42,14 +42,15 @@ Al finalizar retorna la lista creada.
 */
 
 List* crea_lista() {
-   List* L = create_list();
+   List* lista = create_list();
+  
    for(int i = 1; i < 11; i++)
    {
      int* elemento = (int*)malloc(sizeof(int));
      *elemento = i;
-     pushBack(L, elemento);
+     pushBack(lista, elemento);
    }
-   return L;
+   return lista;
 }
 
 /*
@@ -60,6 +61,7 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) {
   int suma = 0;
   int* elemento;
+  
   elemento = (int*)first(L);
   while(elemento != NULL){
     suma += *elemento;
@@ -79,6 +81,7 @@ posiciona en el elemento anterior.
 
 void eliminaElementos(List*L, int elem){
   int* dato;
+  
   dato = (int*)first(L);
   while(dato != NULL){
     if (*dato == elem)
@@ -97,12 +100,14 @@ Puedes usar una pila auxiliar.
 void copia_pila(Stack* P1, Stack* P2) {
   Stack* P3Reload = create_stack();
   void* elemento;
+  
   elemento = top(P1);
   while(elemento != NULL){
     push(P3Reload, elemento);
     pop(P1);
     elemento = top(P1);
   }
+  
   elemento = top(P3Reload);
   while(elemento != NULL){
     push(P2, elemento);
@@ -120,7 +125,7 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-  
+  Stack* pila
    return 0;
 }
 

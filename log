@@ -83,3 +83,13 @@ Wed 20 Mar 2024 11:09:01 PM UTC:
  tests:  4|1
 total_score: 50/70
 bf7ab14
+Wed 20 Mar 2024 11:14:37 PM UTC: 
+ exercises.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:129:4: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘return’
+  129 |    return 0;
+      |    ^~~~~~
+Compilation failed
+f96eaf7
