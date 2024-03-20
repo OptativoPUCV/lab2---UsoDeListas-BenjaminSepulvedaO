@@ -136,3 +136,20 @@ exercises.c:152:21: error: comparison with string literal results in unspecified
 cc1: all warnings being treated as errors
 Compilation failed
 651dca1
+Wed 20 Mar 2024 11:28:55 PM UTC: 
+ exercises.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:138:21: error: comparison between pointer and integer [-Werror]
+  138 |       if (top(pila) == '(')
+      |                     ^~
+exercises.c:145:21: error: comparison between pointer and integer [-Werror]
+  145 |       if (top(pila) == '[')
+      |                     ^~
+exercises.c:152:21: error: comparison between pointer and integer [-Werror]
+  152 |       if (top(pila) == '{')
+      |                     ^~
+cc1: all warnings being treated as errors
+Compilation failed
+efed83c
